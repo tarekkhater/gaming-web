@@ -1,0 +1,178 @@
+.container{
+  width: 100%;
+  max-width: 100%;
+  padding-top: 2rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top:0;
+  inset:0;
+  height:100vh;
+}
+.logo{
+  display:flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgba(255, 255, 255, 0.877);
+  gap: 4px;
+  margin-bottom: 15px;
+}
+.logo h1, .logoMobile h1{
+  font-size:30px;
+  color:red;
+}
+
+.links{
+    font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    color:rgba(255, 255, 255, 0.76);
+}
+.links div{
+    padding:0.2rem 0.8rem 0.2rem 0.4rem;
+    border-radius: 20px;
+}
+.links :nth-child(8){
+    margin-top: 6rem;
+}
+.links div:hover{
+    background-color: rgb(102, 9, 87);
+}
+.icon{
+    font-size:20px;
+}
+.active{
+    color:rgba(204, 16, 16, 0.925) ;
+    background: rgb(36,0,30);
+    background: linear-gradient(90deg, rgba(36,0,30,1) 0%, rgb(37, 6, 53) 53%, rgba(59,13,80,1) 100%);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.active:hover{
+    background-color: inherit;
+}
+.collapseButton{
+  display: none;
+  padding:0 8px 15px 8px;
+  line-height: 0;
+  font-size: 25px;
+  background-color: transparent;
+  border:1px solid lightgray;
+  color:darkgray;
+  border-radius: 10px;
+}
+.collapseButton p {
+  margin:0;
+  padding:0;
+  height:7px;
+  font-weight: bold;
+  color:darkgray;
+}
+.collapse{
+  display:none;
+}
+.mobile{
+  display:none;
+}
+.logoMobile{
+  display:flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgba(255, 255, 255, 0.877);
+}
+
+.collapse a{
+  font-weight:bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.collapse a:hover{
+  color:rgba(187, 54, 54, 0.87);
+}
+
+@media screen and (max-width: 780px) {
+    .mobile{
+      display:flex;
+      justify-content: space-between;
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 100;
+      padding: 1rem 0.8rem;
+      color:white;
+    }
+    .mobile ul{
+      list-style-type:none;
+      padding:0;
+      margin:0;
+    }
+    .container{
+      display:none;
+    }
+    .sidebar{
+        padding: 1rem 0.3rem;
+      }
+      .logo{
+        font-size: 22px;
+      }
+      .logo h1{
+        font-size:22px;
+      }
+   
+    .links{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2;
+        color:rgba(255, 255, 255, 0.76);
+    }
+    .links div{
+        padding:0.2rem 0.3rem;
+        border-radius: 20px;
+    }
+    .icon{
+        font-size:14px;
+    }
+    .collapseButton{
+      display:initial;
+      color:darkgray;
+  }
+  .collapse{
+      position: relative;
+      margin:1rem 0; 
+      display: flex;
+  }
+  .collapse ul{
+      list-style-type: none;
+      
+  }
+  .collapse ul li{
+      line-height: 3;
+      padding:0;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .collapseButton{
+    padding:0 7px 10px 7px;
+    font-size: 18px;
+    background-color: transparent;
+    border:1px solid lightgray;
+    color:darkgray;
+    border-radius: 10px;
+  }
+}
+
+

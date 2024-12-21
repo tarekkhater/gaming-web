@@ -1,0 +1,59 @@
+.container{
+    width:100%;
+    max-width:100%;
+    background-image: url('/111.avif');
+    height: 100vh;
+    background-size: cover;
+    font-weight: 800;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding:.5rem 1.5rem;
+    border-radius: 10px;
+    width:480px;
+}
+
+
+
+
+.confirmLogin{
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 1rem;
+    align-items:center;
+}
+.confirmLogin a{
+    text-decoration:none ;
+    color:rgb(75 85 99);
+    margin-right: 0.75rem;
+}
+
+.confirmLogin a:hover{
+    color:rgba(38, 38, 77, 0.618);;
+}
+
+
+
+@media screen and (max-width: 760px) {
+
+    .container{
+        padding:0 1rem;
+    }
+    
+    .form{
+        width:100%;
+        max-width: 100%;
+        padding:0.3rem 0.5rem;
+    }
+    .form a{
+        font-size: medium;
+
+    }
+
+}

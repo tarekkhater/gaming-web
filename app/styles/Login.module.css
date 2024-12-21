@@ -1,0 +1,68 @@
+.container{
+    width:100%;
+    max-width:100%;
+    background-image: url('/111.avif');
+    height: 100vh;
+    background-size: cover;
+    font-weight: 800;
+    }
+    .loginActors{
+        width:100%;
+        max-width:100%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login{
+    border-radius: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 480px;
+    margin:70px 0 68px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .confirmLogin{
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 1rem;
+    align-items:center;
+    }
+    .confirmLogin a, .login a{
+    text-decoration:none ;
+    color:rgb(75 85 99);
+    margin-right: 0.75rem;
+    }
+    .confirmLogin a:hover , .login a:hover{
+    color:rgba(38, 38, 77, 0.618);;
+    }
+
+     
+    .loginActors p{
+        margin:0 12px;
+        font-size:18px;
+        color:rgba(228, 221, 221, 0.808);
+    }
+
+    .loginActors p:hover{
+        color:darkred;
+    }
+    
+
+    
+
+
+@media screen and (max-width:385px){
+    .loginActors{
+        padding:0 1rem;
+    }
+    .loginActors div a p{
+        font-size: medium;
+    }
+        
+}
