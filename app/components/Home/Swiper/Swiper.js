@@ -34,7 +34,7 @@ export default function Swiper() {
     <div className={styles.container}>
       <section className={styles.swiper} key={item?.id}>
         {item?.video ?(
-        <video className={styles.video}   autoPlay={true} muted={true} loop={true} >
+        <video className={styles.video} playsInline={true}   autoPlay={true} muted={true} loop={true} >
         <source src={item?.video} type="video/mp4"/>
       </video>
         ):
