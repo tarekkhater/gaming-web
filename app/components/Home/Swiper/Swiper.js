@@ -23,13 +23,11 @@ export default function Swiper() {
           setCurrent(items[0].name);
         }
       }
-      console.log(x)
 
     }, 3000);
     return () => clearInterval(interval);
   }, [isTapped]);
   
-  console.log(current , isTapped)
   return (
     <div className={styles.container}>
       <section className={styles.swiper} key={item?.id}>
