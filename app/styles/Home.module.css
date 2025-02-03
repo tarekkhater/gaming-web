@@ -15,7 +15,7 @@
     width:100%;
     max-width: 100%;
     border-radius: 20px;
-    height:450px;
+    height:auto;
     object-fit:fill;
     z-index: 1;
 }
