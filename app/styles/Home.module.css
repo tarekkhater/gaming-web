@@ -15,9 +15,10 @@
     width:100%;
     max-width: 100%;
     border-radius: 20px;
-    height:auto;
-    object-fit:fill;
+    height:450px;
     z-index: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 .overlay{
     position: absolute;
