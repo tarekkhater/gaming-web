@@ -8,13 +8,12 @@ export default async function Home() {
   { next: { revalidate: 0 } }
 ).then((res) => res.json());
 const games = data?.results.slice(0, 4);
-console.log(games);
   return (
     <div >
       <Layout container={
         <div>
           <Swiper />
-          <Games  games={games}/>
+          {/*<Games  games={games}/>*/}
         </div>
       }/>
     </div>
