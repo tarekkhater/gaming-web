@@ -32,10 +32,16 @@ export default function Swiper() {
     <div className={styles.container}>
       <section className={styles.swiper} key={item?.id}>
         {item?.video ?(
-        <video className={styles.video} playsInline={true}  webkit-playsinline="true"
-        style={{ width: '100%', height: 'auto' }}  autoPlay={true} muted={true} loop={true} controls={false} >
-        <source src={item?.video} />
-        </video>
+        <div dangerouslySetInnerHTML={{ __html: `
+          <video
+            loop
+            muted
+            autoplay
+            playsinline
+            src="${item?.video}"
+            class="${styles.video}"
+          />,
+        ` }}></div>
         ):
         (
           <Image className={styles.video} src={item?.image}  alt={item?.name}  />
